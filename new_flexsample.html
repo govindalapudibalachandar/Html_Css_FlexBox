@@ -1,0 +1,82 @@
+<!DOCTYPE html>   <!--  Located at the top, signals the broswer about html5 document-->
+<html lang="en">  <!-- Holds the complete html document using english language-->
+  <head>
+    <meta charset="utf-8">
+    <title> codepen - demo Flexbox 3</title>
+  <style>
+    body {padding: 2cm}
+
+    .headercontainer {
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      background:tomato;
+      font-weight: bold;
+      padding:10px;
+    }
+    .footercontainer {
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      background:lightgreen;
+      font-weight: bold;
+      padding:10px;
+    }
+    .maincontainer {
+      display: flex;
+      flex-flow: row wrap;
+      text-align: center;
+      font-weight: bold;
+      padding:10px;
+    }
+    .maincontainerItem {
+      text-align: left;
+      background-color: deepskyblue;
+    }
+    .article {
+      padding:10px;
+      margin:10px;
+      background-color: aqua;
+    }
+    .sideBarleftItem{background-color: gold;}
+    .sideBarrightItem{background-color: hotpink;}
+    .sideBarItem { flex:1 0 0;border:0px soild green;}
+    .maincontainerItem{ flex:3 0px;}
+     
+    .sideBarItem{ order:1;}
+    .maincontainerItem{order:2;}
+    .sideBarrightItem{order:3;}
+
+</style>
+  </head>        <!-- Holds the information pages like title css style keywords-->
+  <body>
+
+    <header class="headercontainer"><h1>HEADER - Sample Flexbox Example</h1></header>
+  <div class ="maincontainer">
+    <section class ="maincontainerItem">
+      <article>
+        <h2>First article</h2>
+
+        <p> A first article inspection (FAI) is a design verification and design history file and a formal method of providing a reported measurement for each manufactured feature of a part or assembly. ... Another method is for both the supplier and purchaser perform the First Article on the ordered product.</p>
+      </article>
+
+      <article>
+       <h2>Second article</h2>
+
+       <p>Article Two of the United States Constitution establishes the executive branch of the federal government, which carries out and enforces federal laws. ... Section 2 of Article Two lays out the powers of the presidency, establishing that the president serves as the commander-in-chief of the military, among many other role</p>
+     </article>
+
+     <article>
+      <h2>Third article</h2>
+
+      <p>Section 2 also requires the "principal officer" of any executive department to tender advice. Though not required by Article Two, President George Washington organized the principal officers of the executive departments into the Cabinet, a practice that subsequent presidents have followed. The Treaty Clause grants the president the power to enter into treaties with the approval of two-thirds of the Senate.</p>
+    </article>
+      </section>
+      <sideBar class ="sideBarItem sideBarleftItem"><div class="center"><p>lift side Bar</p></div></sideBar>
+      <sideBar class ="sideBarItem sideBarrightItem"><div class="center"><p>right side Bar</p></div></sideBar> 
+
+  </div>
+  <footer class="footercontainer"> Footer
+  </footer>
+  </body>
+</html>
